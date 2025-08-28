@@ -3,6 +3,7 @@ const { ModuleFederationPlugin } = require("webpack").container;
 module.exports = {
   webpack: {
     configure: (config) => {
+      config.output.publicPath = "http://localhost:3001/"; // 👈 remote CRA app ka URL
       config.plugins.push(
         new ModuleFederationPlugin({
           name: "remoteApp",
