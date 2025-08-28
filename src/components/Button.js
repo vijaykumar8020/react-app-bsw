@@ -7,7 +7,7 @@ const Button = () => {
     <button
       style={{ padding: "10px", background: "blue", color: "white" }}
     >
-      Remote Button
+      Remote Button 1
     </button>
   );
 };
