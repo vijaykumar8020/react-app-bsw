@@ -13,8 +13,8 @@ module.exports = {
             "./Button": "./src/components/Button",
           },
           shared: {
-            react: { singleton: true, requiredVersion: false, eager: false },
-            "react-dom": { singleton: true, requiredVersion: false, eager: false },
+            react: { singleton: true, requiredVersion: false, eager: true },
+            "react-dom": { singleton: true, requiredVersion: false, eager: true },
           },
         })
       );
