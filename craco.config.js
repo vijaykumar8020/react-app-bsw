@@ -1,21 +1,20 @@
 const { ModuleFederationPlugin } = require("webpack").container;
 
-console.log("Remote Button from CRA frm config file");
-
 module.exports = {
   webpack: {
     configure: (config) => {
-      config.output.publicPath = "http://localhost:3002/"; // 👈 remote CRA app ka URL
+      config.output.publicPath = "http://localhost:3000/"; // remote URL
+
       config.plugins.push(
         new ModuleFederationPlugin({
           name: "remoteApp",
           filename: "remoteEntry.js",
           exposes: {
-            "./Button": "./src/components/Button", // expose component
+            "./Button": "./src/components/Button",
           },
           shared: {
-            react: { singleton: true },
-            "react-dom": { singleton: true },
+            react: { singleton: true, eager: true, requiredVersion: false },
+            "react-dom": { singleton: true, eager: true, requiredVersion: false },
           },
         })
       );
