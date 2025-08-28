@@ -5,7 +5,7 @@ console.log("Remote Button from CRA frm config file");
 module.exports = {
   webpack: {
     configure: (config) => {
-      config.output.publicPath = "http://localhost:3001/"; // 👈 remote CRA app ka URL
+      config.output.publicPath = "http://localhost:3002/"; // 👈 remote CRA app ka URL
       config.plugins.push(
         new ModuleFederationPlugin({
           name: "remoteApp",
