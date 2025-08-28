@@ -3,8 +3,7 @@ const { ModuleFederationPlugin } = require("webpack").container;
 module.exports = {
   webpack: {
     configure: (config) => {
-      config.output.publicPath = "https://react-app-bsw.vercel.app/"; 
-      // 👆 yahi tumhare remote ka Vercel deploy URL hai
+      config.output.publicPath = "http://localhost:3001/"; // apne remote ka URL
 
       config.plugins.push(
         new ModuleFederationPlugin({
@@ -14,11 +13,12 @@ module.exports = {
             "./Button": "./src/components/Button",
           },
           shared: {
-            react: { singleton: true, eager: true, requiredVersion: false },
-            "react-dom": { singleton: true, eager: true, requiredVersion: false },
+            react: { singleton: true, requiredVersion: false, eager: false },
+            "react-dom": { singleton: true, requiredVersion: false, eager: false },
           },
         })
       );
+
       return config;
     },
   },
