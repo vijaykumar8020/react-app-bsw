@@ -1,14 +1,20 @@
-import React from "react";
-
 const Card = () => {
-  console.log("✅ Remote Card rendered");
-  return (
-    <button
-      style={{ padding: "10px", background: "blue", color: "white" }}
-    >
-      Card Component
-    </button>
-  );
-};
-
-export default Card;
+    console.log("✅ Remote Card rendered");
+    return (
+      <div
+        style={{
+          padding: "20px",
+          background: "white",
+          border: "2px solid blue",
+          color: "blue",
+          borderRadius: "8px",
+          maxWidth: "300px"
+        }}
+      >
+        <h3>Card Component</h3>
+        <p>This is a remotely loaded Card.</p>
+      </div>
+    );
+  };
+  export default Card;
+  
