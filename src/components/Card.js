@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ title, description, cta }) => {
+const Card = () => {
   console.log("✅ Remote Card rendered");
   return (
     <div
@@ -12,8 +12,8 @@ const Card = ({ title, description, cta }) => {
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <h2 style={{ margin: "0 0 8px 0" }}>{title}</h2>
-      <p style={{ margin: "0 0 16px 0", color: "#555" }}>{description}</p>
+      <h2 style={{ margin: "0 0 8px 0" }}>Card Title</h2>
+      <p style={{ margin: "0 0 16px 0", color: "#555" }}>Card Description</p>
       <button
         style={{
           padding: "10px 16px",
@@ -23,9 +23,8 @@ const Card = ({ title, description, cta }) => {
           borderRadius: "4px",
           cursor: "pointer",
         }}
-        onClick={cta.onClick}
       >
-        {cta.label}
+        Card Cta
       </button>
     </div>
   );
