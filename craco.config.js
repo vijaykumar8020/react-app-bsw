@@ -10,7 +10,7 @@ module.exports = {
           name: "remoteApp",
           filename: "remoteEntry.js",
           exposes: {
-            // "./Button": "./src/components/Button",
+            "./Button": "./src/components/Button",
             "./Card": "./src/components/Card",
           },
           shared: {
