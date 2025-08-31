@@ -3,7 +3,7 @@ const { ModuleFederationPlugin } = require("webpack").container;
 module.exports = {
   webpack: {
     configure: (config) => {
-      config.output.publicPath = "https://react-app-bsw.vercel.app/"; // apne remote ka URL
+      config.output.publicPath = "auto"; // apne remote ka URL
 
       config.plugins.push(
         new ModuleFederationPlugin({
