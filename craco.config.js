@@ -14,8 +14,8 @@ module.exports = {
             "./Card": "./src/components/Card",
           },
           shared: {
-            react: { singleton: true, requiredVersion: false, eager: true },
-            "react-dom": { singleton: true, requiredVersion: false, eager: true },
+            react: { singleton: false, requiredVersion: false, eager: true },
+            "react-dom": { singleton: false, requiredVersion: false, eager: true },
           },
         })
       );
