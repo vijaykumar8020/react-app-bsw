@@ -10,12 +10,12 @@ module.exports = {
           name: "remoteApp",
           filename: "remoteEntry.js",
           exposes: {
-            "./Button": "./src/components/Button",
+            // "./Button": "./src/components/Button",
             "./Card": "./src/components/Card",
           },
           shared: {
-            react: { singleton: false, requiredVersion: false, eager: true },
-            "react-dom": { singleton: false, requiredVersion: false, eager: true },
+            react: { singleton: true, requiredVersion: false, eager: true },
+            "react-dom": { singleton: true, requiredVersion: false, eager: true },
           },
         })
       );
