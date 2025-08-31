@@ -12,10 +12,15 @@ module.exports = {
           exposes: {
             "./Button": "./src/components/Button",
             "./Card": "./src/components/Card",
+            "./HeroBanner": "./src/components/HeroBanner",
           },
           shared: {
             react: { singleton: true, requiredVersion: false, eager: true },
-            "react-dom": { singleton: true, requiredVersion: false, eager: true },
+            "react-dom": {
+              singleton: true,
+              requiredVersion: false,
+              eager: true,
+            },
           },
         })
       );
