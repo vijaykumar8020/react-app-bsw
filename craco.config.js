@@ -11,6 +11,7 @@ module.exports = {
           filename: "remoteEntry.js",
           exposes: {
             "./Button": "./src/components/Button",
+            "./Card": "./src/components/Card",
           },
           shared: {
             react: { singleton: true, requiredVersion: false, eager: true },
