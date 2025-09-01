@@ -1,8 +1,7 @@
-// src/components/Button.js
 import React from "react";
 
 const HeroBanner = () => {
-  console.log("✅ Remote Button rendered");
+  console.log("✅ Remote Hero Banner rendered");
   return (
     <div
         style={{
@@ -14,8 +13,8 @@ const HeroBanner = () => {
           maxWidth: "1200px"
         }}
       >
-        <h1>Hero banner Title</h1>
-        <p>Hero Banner Description</p>
+        <h1>Remote Hero Banner Component</h1>
+        <p>This is a remotely loaded Hero Banner.</p>
       </div>
   );
 };

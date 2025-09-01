@@ -11,7 +11,7 @@ const Card = () => {
           maxWidth: "300px"
         }}
       >
-        <h3>Card Component</h3>
+        <h3>Remote Card Component</h3>
         <p>This is a remotely loaded Card.</p>
       </div>
     );
